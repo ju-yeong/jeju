@@ -4,77 +4,226 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>제주용암수</title>
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-  />
-
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>jeju water</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- nanum font -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <!-- nanum square font -->
+    <script src="https://kit.fontawesome.com/f6409690e4.js" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/commons.css">
+    <link rel="stylesheet" href="css/media-query.css">
 </head>
 <body>
-
     <header>
-        <nav class="gnb">
-            <div class="left-navi">
-                <div class="logo">
-                    <img src="assets/images/logo.png" alt="logo">
-                </div>
-                <ul class="left-menu">
+        <div class="header">
+            <h1>
+                <img src="img/logo.png" alt="logo">
+            </h1>
+            <nav class="main-nav">
+                <ul>
                     <li><a href="#">Dr.You 제주용암수란?</a></li>
                     <li><a href="#">일반주문</a></li>
                     <li><a href="#">정기배송</a></li>
                 </ul>
-            </div>
-            <div class="right-navi">
-                <ul class="right-menu">
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">쿠폰사용</a></li>
-                    <li><a href="#">대량주문 문의</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="menu-btn">
-            <h1>메뉴</h1>
+            </nav>
+            <ul class="user">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">쿠폰사용</a></li>
+                <li><a href="#">대량주문 문의</a></li>
+            </ul>
+            <i class="menuBtn fas fa-bars"></i>
         </div>
     </header>
-    
-    <section class="section01 main">
-        <div class="slide">
+    <div class="container">
+        <div class="content01">
             <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide bg1">Slide 1</div>
-                  <div class="swiper-slide bg2">Slide 2</div>
-                  <div class="swiper-slide bg3">Slide 3</div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-              </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide slide-img01"></div>
+                      <div class="swiper-slide slide-img02"></div>
+                      <div class="swiper-slide slide-img03"></div>
+                    </div>
+                    <div class="swiper-icon">
+                        <div class="swiper-btn swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-btn swiper-button-next"></div>
+                    </div>
+                  </div>
         </div>
-    </section>
+        <div class="content02">
+            <div class="content02Wrap">
+                <p>
+                    공지사항
+                </p>
+                <i class="fas fa-volume-down"></i>
+                <span>
+                    맛있는 물, 닥터유 제주용암수. 최대 25% 가격인하
+                </span>
+            </div>
+        </div>
+        <div class="content03">
+            <h3>
+                돈과 시간을 아껴주는, 정기배송
+            </h3>
+            <ul>
+                <li>
+                    <div class="listImg listImg01"></div>
+                    <img src="img/bg_regular_01.png" alt="image icon">
+                    <div class="c3Text">
+                        <h6>
+                            잊고 사는 즐거움
+                        </h6>
+                        <p>
+                            한번 주문으로 원하는 요일, 장소로 배송
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="listImg listImg02"></div>
+                    <img src="img/bg_regular_02.png" alt="image icon">
+                    <div class="c3Text">                       
+                        <h6>
+                            매번 편리하게
+                        </h6>
+                        <p>
+                            간편한 주문, 세 번 클릭으로 주문 끝
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="listImg listImg03"></div>
+                    <img src="img/bg_regular_03.png" alt="image icon">
+                    <div class="c3Text">
+                        <h6>
+                            안심하세요
+                        </h6>
+                        <p>
+                            언제든지 취소/해지가 가능합니다
+                        </p>  
+                    </div>  
+                </li>
+            </ul>
+            <div class="c3Btn">
+                <a href="#">
+                    정기배송 신청하기
+                </a>
+            </div>
+        </div>
+        <div class="content04">
+            <h3>
+                <span>경도</span>가 좋은 물의 기준,
+                <br>
+                Dr.You 제주용암수
+            </h3>
+            <div class="introduce">
+                <div class="introduceBox01 introduceBox">
+                    <div class="icon" id="icon"></div>
+                    <p>
+                        <span>경도200</span>
+                        <br>
+                        좋은 물 선택의 기준
+                    </p>
+                </div>
+                <div class="introduceBox02 introduceBox">
+                    <div class="icon" id="icon"></div>
+                    <p>
+                        <span>1등급 물 맛</span>
+                        <br>
+                        &lt;2021 먹는샘물 품평회&gt;
+                        <br class="iconBr"> 최고점
+                    </p>
+                </div>
+                <div class="introduceBox03 introduceBox">
+                    <div class="icon" id="icon"></div>
+                    <p>
+                        <span>40만 년</span> 동안
+                        <br>
+                        현무암이 거른 <span>깨끗함</span>
+                    </p>
+                </div>
+                <div class="introduceBox04 introduceBox">
+                    <div class="icon" id="icon"></div>
+                    <p>
+                        <span>알칼리워터</span>
+                    </p>
+                </div>
+            </div>
+            <div class="introduceImg"></div>
+        </div>
+        <div class="content05">
+            <div class="c5Box01 c5Box">
+                <a href="#">
+                    <h6>
+                        오늘 밤 주문하면 내일 도착!
+                    </h6>
+                    <p>
+                        오후 11시까지 결제만 하세요.
+                        <br>
+                        일부 도서산간지역은 예외
+                    </p>
+                </a>
+            </div>
+            <div class="c5Box02 c5Box">
+                <a href="#">                    
+                    <h6>
+                        법인/대량 구매
+                    </h6>
+                    <p>
+                        20팩 이상 구매고객
+                        <br>
+                        대량주문 문의하기!
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="content06">
+            <h4>
+                Dr.You 제주용암수 어플로 
+                <br>
+                더욱 편하게 이용하세요!
+            </h4>
+            <div class="download">
+                <a href="#" class="c6Btn01">
+                    <img src="img/btn_android.png" alt="플레이스토어에서 다운로드하기">
+                </a>
+                <a href="#" class="c6Btn02">
+                    <img src="img/btn_ios.png" alt="앱스토어에서 다운로드하기">
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="content07">            
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+            </ul>
+            <div class="footerInfo">
+                <p>
+                    (주)오리온 서울특별시 용산구 백범로 90다길 13(문배동)
+                </p>
+                <p>
+                    (주)오리온 대표자 : 이경재 사업자 등록번호 : 709-81-00727 사업자정보확인
+                </p>
+                <p>
+                    통신판매업신고: 2019-서울용산-1143 고객센터 : 080-023-5701 (평일 09:00 ~ 17:30 / 주말, 공휴일 휴무)
+                </p>
+            </div>
+            <span>
+                COPYRIGHT(C) JEJUYONGAMSOO ALL RIGHTS RESERVED
+            </span>
+        </div>
+    </footer>
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-        const navi=document.querySelector('.right-menu');
-        const menuBtn=document.querySelector('.menu-btn');
-
-        menuBtn.addEventListener('click',()=>{
-            navi.classList.toggle('gnb-btn');
-        });
-
-        var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
