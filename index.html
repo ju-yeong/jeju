@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jeju water</title>
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/basic_style.css">
+    <link rel="stylesheet" href="css/body_style.css">
+    <link rel="stylesheet" href="css/media_query.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-    <!-- nanum font -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
-    <!-- nanum square font -->
     <script src="https://kit.fontawesome.com/f6409690e4.js" crossorigin="anonymous"></script>
-    <!-- font awesome -->
-    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <!-- swiper -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/commons.css">
-    <link rel="stylesheet" href="css/media-query.css">
+
+
 </head>
 <body>
     <header>
@@ -23,39 +26,111 @@
             <h1>
                 <img src="img/logo.png" alt="logo">
             </h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Dr.You 제주용암수란?</a></li>
-                    <li><a href="#">일반주문</a></li>
-                    <li><a href="#">정기배송</a></li>
+            <div class="menu-nav">
+                <nav>
+                    <ul>
+                        <li><a href="#">Dr.You 제주용암수란?</a></li>
+                        <li><a href="#">일반주문</a></li>
+                        <li><a href="#">정기배송</a></li>
+                    </ul>
+                </nav>
+                <ul class="user">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">쿠폰사용</a></li>
+                    <li><a href="#">대량주문 문의</a></li>
                 </ul>
-            </nav>
-            <ul class="user">
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="#">고객센터</a></li>
-                <li><a href="#">쿠폰사용</a></li>
-                <li><a href="#">대량주문 문의</a></li>
-            </ul>
-            <i class="menuBtn fas fa-bars"></i>
-        </div>
+            </div>
+            <i class="fas fa-bars menu-btn"></i>
+            </div>
     </header>
     <div class="container">
+        <!-- <div class="content01">
+            <div class="content01Wrap">
+                <div class="bnText">
+                    <p>
+                        보다 많은 분들이,
+                        <br>
+                        부담없이 드실 수 있도록
+                    </p>
+                    <h4>
+                        <span class="pink">정기주문 20%</span> 즉시 할인
+                        <br>
+                        <span class="purple">일반주문 재구매 10%</span> 할인
+                    </h4>
+                    <p class="bnPurple">
+                        (1개월 내 재구매, 주문단 15천원 한도)
+                    </p>
+                </div>
+                <div class="bnBtn">
+                    <a href="#">
+                        자세히 보기
+                    </a>
+                </div>
+                <div class="slider">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>
+                        3 /3
+                    </span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </div> -->
+        
         <div class="content01">
-            <div class="swiper mySwiper">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide slide-img01"></div>
-                      <div class="swiper-slide slide-img02"></div>
-                      <div class="swiper-slide slide-img03"></div>
-                    </div>
-                    <div class="swiper-icon">
-                        <div class="swiper-btn swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-btn swiper-button-next"></div>
+            <div class="swiper mySwiper main-slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide bg01">
+                      <div class="slide-wrap">
+                          <a href="#" class="slide-btn">자세히 보기</a>
+                      </div>
+                  </div>
+                  <div class="swiper-slide bg02">
+                    <div class="slide-wrap">
+                        <a href="#" class="slide-btn">자세히 보기</a>
                     </div>
                   </div>
+                  <div class="swiper-slide bg03">
+                    <div class="slide-wrap">
+                        <a href="#" class="slide-btn">자세히 보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-int">
+                    <div class="control">
+                        <div class="swiper-button-prev fas fa-arrow-left"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next fas fa-arrow-right"></div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper mySwiper sub-slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide bg01">
+                      <img src="img/bg_visual_0.jpg" alt="">
+                      <a href="#" class="slide-btn">자세히 보기</a>
+                  </div>
+                  <div class="swiper-slide bg02">
+                      <img src="img/bg_visual_2.jpg" alt="">
+                      <a href="#" class="slide-btn">자세히 보기</a>
+                  </div>
+                  <div class="swiper-slide bg03">
+                      <img src="img/bg_visual_4.jpg" alt="">
+                      <a href="#" class="slide-btn">자세히 보기</a>
+                  </div>
+                </div>
+                <div class="slide-int">
+                    <div class="control">
+                        <div class="swiper-button-prev fas fa-arrow-left"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next fas fa-arrow-right"></div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
         <div class="content02">
             <div class="content02Wrap">
                 <p>
@@ -109,11 +184,11 @@
                     </div>  
                 </li>
             </ul>
-            <div class="c3Btn">
+            <button class="c3Btn">
                 <a href="#">
                     정기배송 신청하기
                 </a>
-            </div>
+            </button>
         </div>
         <div class="content04">
             <h3>
@@ -222,8 +297,8 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

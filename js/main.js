@@ -1,4 +1,18 @@
+// $('.menu-btn').click(function(){
+//     $('.menu-nav').css('display','flex');
+//     $('.user').css('display','flex');
+// })
+
+$('.menu-btn').click(function(){
+    $('.menu-nav').slideToggle();
+})
+
 var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    //   },
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
@@ -8,42 +22,3 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
-
-$( '.menuBtn' ).click( function() {
-  $( '.user' ).slideToggle();
-} );
-
-// header scroll show/hide event
-// let prevScrollTop = 0;
-// let nowScrollTop = 0;
-
-// function wheelDelta(){
-//     return prevScrollTop - nowScrollTop > 0 ? 'up' : 'down';
-// };
-
-// $(window).on('scroll', function(){
-//   if(wheelDelta() == 'down'){
-//     $('.main-nav').slideDown();
-//   }
-//   if(wheelDelta() == 'up'){
-//     $('.main-nav').slideUp();
-//   }
-//   prevScrollTop = nowScrollTop;
-// });
-
-var lastScrollTop = 0, delta = 15;
-
-$(window).scroll(function(){
-    var scrollTop = $(this).scrollTop()
-    if(Math.abs(lastScrollTop - scrollTop) <= delta)
-    return;
-
-    if ((scrollTop > lastScrollTop) && (lastScrollTop>0)) {
-        $(".main-nav").fadeOut();
-    } else {
-        $(".main-nav").fadeIn();
-    }
-    lastScrollTop = scrollTop;
-});
-
-// header scroll show/hide event
