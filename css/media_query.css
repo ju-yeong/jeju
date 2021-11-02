@@ -66,9 +66,6 @@
 }
 
 @media(max-width:900px){
-    .content04 .introduce .introduceBox02 p .iconBr {
-        display: inline;
-    }
 }
 
 @media(max-width:769px){
@@ -86,36 +83,26 @@
         margin: 0 auto;
     }
 
-    .content04 .introduce .introduceBox01 {
-        top: 90px;
+    .content04 .introduce>div{
+        position: relative;
+        top: 0;
         left: 0;
+        margin-bottom: 20px;
     }
-
     .content04 .introduce .introduceBox02 {
-        top: 180px;
-        left: 0;
         flex-direction: row;
         text-align: left;
         
     }
 
     .content04 .introduce .introduceBox03 {
-        top: 270px;
-        left: 0;
         flex-direction: row;
         text-align: left;
     }
 
-    .content04 .introduce .introduceBox04 {
-        top: 360px;
-        left: 0;
+    .introduceImg{
+        display: none;
     }
-
-    .content04 .introduceImg {
-        margin: 0 5%;
-        transform: translateX(0);
-    }
-
     .content06 h4 {
         font-size: 25px;
     }

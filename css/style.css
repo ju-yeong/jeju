@@ -1,5 +1,5 @@
-/* @import url(commons.css);
-@import url(media-query.css); */
+@import url(reset.css);
+@import url(common.css);
 
 /* 헤더 */
 
@@ -8,33 +8,32 @@ header {
     background-color: white;
     z-index: 99;
     border-bottom: 1px solid gray;
-    position: static;
+    position: sticky;
+    top: 0;
 }
 
 .header {
-    position: relative;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 999;
-}
-
-.left {
-    display: flex;
-    align-items: center;
 }
 .header h1{
-    margin-left: 10px;
+    padding-left: 20px;
 }
+.header .menu-btn{
+    margin: 6px 10px;
+    cursor: pointer;
+}
+
 .header img {
     width: 150px;
 }
-
-header nav {
-    margin-left: 20px;
+.menu-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
 }
-
 header nav ul {
     display: flex;
     font-weight: 700;
@@ -53,7 +52,10 @@ header .user {
     position: relative;
 }
 
-.user li:first-child a {
+.header .user li:first-child {
+}
+
+.header .user li:first-child a {
     background-color: #00aa91;
     padding: 7px 10px;
     border-radius: 5px;
@@ -77,14 +79,12 @@ header .user {
     margin: 0 10px;
 }
 
-.menuBtn {
+.header .menu-btn {
     display: none;
-    margin-right: 10px;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #00aa91;
     color: white;
-    cursor: pointer;
 }
 
 /* \\헤더 */
@@ -96,73 +96,16 @@ header .user {
 
 /* 콘텐츠01 */
 
+.content01{
+    background: linear-gradient(0deg, rgba(0,255,245,1) 0%, rgba(122,114,255,1) 100%);
+}
+
 .content01Wrap {
     width: 70%;
     margin: 0 auto;
     padding: 185px 0 100px 0;
     color: white;
 }
-
-/* 콘텐츠01 slider */
-
-.content01-slider{
-    position: relative;
-    width: 100%;
-    height: 630px;
-}
-.swiper-wrapper{
-    height: 630px;
-}
-
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
-
-.slide{
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.swiper-slide{
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
-}
-
-.slide-img01{
-  background: url(../img/sec01-bg01.jpg);
-}
-.slide-img02{
-  background: url(../img/sec01-bg02.jpg);
-}
-.slide-img03{
-  background: url(../img/sec01-bg03.jpg);
-}
-
-.swiper-slide {
-text-align: center;
-font-size: 18px;
-}
-
-.swiper-icon{
-    position: absolute;
-    left: 100px;
-    bottom: 80px;
-}
-
-.swiper-icon div{
-    position: relative;
-    display: inline;
-}
-
-
-/* 콘텐츠01 slider end */
 
 .bnText p {
     line-height: 25px;
@@ -211,6 +154,100 @@ font-size: 18px;
     padding: 0 10px;
 }
 
+/* 슬라이드 */
+
+.main-slide .swiper-slide{
+    width: 100%;
+    height: 630px;
+}
+.swiper-slide{
+    background-position: center;
+}
+.main-slide .bg01{
+    background: url(../img/bg_visual_20.jpg) center;
+}
+.main-slide .bg02{
+    background: url(../img/bg_visual_22.jpg) center;
+}
+.main-slide .bg03{
+    background: url(../img/bg_visual_24.jpg) center;    
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slide-int{
+      position: absolute;
+      top: 85%;
+      width: 100%;
+      z-index: 90;
+  }
+  .slide-btn{
+      padding: 20px 30px;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5px;
+  }
+  .control{
+      display: flex;
+      align-items: center;
+  }
+  .main-slide .control,
+  .slide-wrap{
+      width: 950px;
+      margin: 0 auto;
+  }
+  .main-slide .slide-btn{
+      position: absolute;
+      top: 55%;
+  }
+  .sub-slide .control{
+      margin-left: 5%;
+  }
+
+  .sub-slide .slide-btn{
+      position: absolute;
+      bottom: 30%;
+      left: 5%;
+  }
+  .bg03 .slide-btn{
+      border: none;
+      background-color: #00aa91;
+      left: 50%;
+      top: unset;
+      bottom: 10%;
+      transform: translateX(-50%);
+  }
+  .swiper-button-prev,
+  .swiper-button-next,
+  .swiper-pagination{
+    position: unset;
+    top: unset;
+    margin-top: unset;
+    width: unset;
+    height: unset;
+    bottom: 0;
+    color: #000;
+  }
+  .swiper-pagination{
+      padding: 0 20px;
+      flex-shrink: 0;
+  }
+  .swiper-button-prev::after{
+    display: none;
+  }
+  .swiper-button-next::after{
+    display: none;
+  }
+
+  .sub-slide{
+    display: none;
+}
+
 /* 콘텐츠02 */
 
 .content02 {
@@ -221,7 +258,7 @@ font-size: 18px;
 .content02Wrap {
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 950px;
     margin: 0 auto;
 }
 
@@ -305,8 +342,9 @@ font-size: 18px;
     background-color: #00aa91;
     padding: 20px 30px;
     border-radius: 5px;
-    width: 130px;
     text-align: center;
+    border: none;
+    cursor: pointer;
 }
 
 .content03 .c3Btn a {
@@ -319,7 +357,7 @@ font-size: 18px;
 /* 컨텐츠04 */
 
 .content04 {
-    padding-top: 100px;
+    padding: 80px 0;
     border-bottom: 1px solid gray;
 }
 
@@ -368,7 +406,7 @@ font-size: 18px;
     transform: translateX(15px);
 } */
 
-.content04 .introduce .introduceBox01 {
+.introduceBox01 {
     width: 270px;
     display: flex;
     align-items: center;
@@ -379,15 +417,15 @@ font-size: 18px;
     z-index: 5;
 }
 
-.content04 .introduce .introduceBox01 .icon {
+.introduceBox01 .icon {
     background: url(../img/icon01.png) no-repeat ;
 }
 
-.content04 .introduce .introduceBox02 p .iconBr {
+.introduceBox02 p .iconBr {
     display: none;
 }
 
-.content04 .introduce .introduceBox02 {
+.introduceBox02 {
     width: 370px;
     display: flex;
     align-items: center;
@@ -399,11 +437,11 @@ font-size: 18px;
     z-index: 5;
 }
 
-.content04 .introduce .introduceBox02 .icon {
+.introduceBox02 .icon {
     background: url(../img/icon02.png) no-repeat ;
 }
 
-.content04 .introduce .introduceBox03 {
+.introduceBox03 {
     width: 280px;
     display: flex;
     align-items: center;
@@ -415,11 +453,11 @@ font-size: 18px;
     z-index: 5;
 }
 
-.content04 .introduce .introduceBox03 .icon {
+.introduceBox03 .icon {
     background: url(../img/icon03.png) no-repeat ;
 }
 
-.content04 .introduce .introduceBox04 {
+.introduceBox04 {
     width: 200px;
     display: flex;
     align-items: center;
