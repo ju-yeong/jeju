@@ -225,11 +225,10 @@
         position: relative;
     }
 
+    .content04 .introduce>div{
+        margin-bottom: 0px;
+    }
     .content04 h3 {
-        position: absolute;
-        top: 60px;
-        left: 50%;
-        transform: translateX(-50%);
         font-size: 20px;
         margin-bottom: 20px;
         z-index: 999;
