@@ -9,11 +9,21 @@ $(window).scroll(function(){
     $('.move-top').hide();
   }
   
-  if ($(this).scrollTop() > 2600){
-    $('.move-top').addClass('move-top-ab');
+  if($(this).width() > 750){
+    if ($(this).scrollTop() > 2600){
+      $('.move-top').addClass('move-top-ab');
+    } else {
+      $('.move-top').removeClass('move-top-ab');
+    }
   } else {
-    $('.move-top').removeClass('move-top-ab');
+    console.log('hey')
+    if ($(this).scrollTop() > 2150){
+      $('.move-top').addClass('move-top-ab');
+    } else {
+      $('.move-top').removeClass('move-top-ab');
+    }
   }
+
 });
 
 $('.move-top').click(function(){

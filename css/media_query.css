@@ -1,4 +1,4 @@
-@media(max-width:1025px){
+@media(max-width:1200px){
 
     .header .user li a {
         margin: 0 7px;
@@ -10,6 +10,14 @@
 
     .content05 {
         width: 95%;
+        justify-content: center;
+    }
+    .c5Box01{
+        margin-right: 20px;
+    }
+
+    .move-top{
+        right: 30px;
     }
 }
 @media(min-width:1020px){
@@ -279,7 +287,9 @@
         margin-bottom: 20px;
     }
 
-    
+    .move-top{
+        right: 15px;
+    }
 
 }
 
