@@ -1,3 +1,11 @@
+
+$('.modal>div').click(function() {
+  $('.modal').css('display','none');
+})
+
+
+
+
 // top move button
 
 $(window).scroll(function(){
