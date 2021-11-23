@@ -9,7 +9,6 @@ $('.modal>div').click(function() {
 // top move button
 
 $(window).scroll(function(){
-  console.log($(this).scrollTop())
 
 	if ($(this).scrollTop() > 300){
 		$('.move-top').show();
